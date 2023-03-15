@@ -7,6 +7,7 @@ function checkPass() {
 
   if (pass.length != 0 && pass == confirmPass) {
     message.innerHTML = "They match!";
+    message.style.color = "green";
   } else {
     message.innerHTML = "Password doesn't match!";
     message.style.color = "red";
