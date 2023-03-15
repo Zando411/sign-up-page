@@ -5,6 +5,10 @@
   font-family: "Rubik", sans-serif;
 }
 
+em {
+  color: coral;
+}
+
 html,
 body {
   height: 100%;
@@ -20,7 +24,7 @@ body {
 }
 
 .left-side {
-  width: 40%;
+  width: 35%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -34,16 +38,17 @@ body {
   color: white;
   font-size: 1rem;
   z-index: 1;
+  border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 8px;
 }
 
-a {
+.left-side > p > a {
   text-decoration: underline;
   color: white;
 }
 
-a:visited {
+.left-side > p > a:visited {
   text-decoration: none;
   color: white;
 }
@@ -53,23 +58,120 @@ a:visited {
 }
 
 .right-side {
-  width: 60%;
-  background-color: blue;
+  width: 65%;
+  background-color: #f5f2f2;
+  flex-direction: column;
+  display: flex;
 }
 
-.header {
-  background-color: white;
-  height: 40%;
+header {
+  height: 30vh;
 }
 
-.right-side > .header > .first {
-  padding-top: 15%;
+.right-side > header > .first {
+  margin-top: 10vh;
 }
 
-.right-side > .header > p {
+.right-side > header > p {
   font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 50px;
+  max-width: 50ch;
+  min-width: 25ch;
+}
+
+.form-title {
+  font-size: 2rem;
   font-weight: 500px;
-  padding-top: 20px;
-  padding-left: 50px;
-  width: 60ch;
+  margin-top: 10vh;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.form-subtext {
+  font-size: 0.9rem;
+  color: coral;
+}
+
+.form {
+  margin-left: 50px;
+  width: 60%;
+}
+
+main {
+  height: 60vh;
+  box-shadow: 0px 8px 10px grey;
+  background-color: white;
+}
+
+.form-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 6px 10px;
+  border: 2px rgb(232, 232, 232) solid;
+  border-radius: 5px;
+  width: 90%;
+  outline: none;
+}
+
+input:focus {
+  border-color: coral;
+  box-shadow: 0 0 10px coral;
+  outline: none;
+}
+
+label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+footer > p > a {
+  color: coral;
+  text-decoration: none;
+}
+
+footer > p > a a:visited {
+  text-decoration: none;
+  color: coral;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  align-content: center;
+}
+
+footer > p {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit_button {
+  margin-top: 30px;
+}
+
+button {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
